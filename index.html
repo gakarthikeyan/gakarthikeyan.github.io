@@ -29,23 +29,29 @@
         /* GKInnovation Banner */
         .banner {
             width: 100%;
-            height: 280px;
             background: #0f172a;
-            overflow: hidden;
+            text-align: center;
+            padding: 20px;
         }
         
         .banner img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
+            max-width: 1200px;
+            max-height: 250px;
+            height: auto;
             display: block;
+            margin: 0 auto;
+            object-fit: contain;
         }
         
         /* Mobile */
         @media (max-width: 600px) {
             .banner {
-                height: 160px;
+                padding: 10px;
+            }
+        
+            .banner img {
+                max-height: 160px;
             }
         }
 
@@ -184,7 +190,7 @@
 </div>
 
 <header>
-    <h1>GKInnovation</h1>
+   <!-- <h1>GKInnovation</h1> -->
     <p>
         Creating simple, useful and engaging mobile applications
         designed to make everyday experiences better.
