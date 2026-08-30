@@ -25,31 +25,32 @@
             color: #1e293b;
             line-height: 1.6;
         }
-    
-        /* GKInnovation Banner */
+
+        /* ================================
+           GKInnovation Banner
+           ================================ */
+
         .banner {
             width: 100%;
+            margin: 0;
+            padding: 0;
             background: #0f172a;
-            text-align: center;
             overflow: hidden;
         }
-        
+
         .banner img {
-            width: 100%;
-            max-width: 100%;
-            height: 250px;
-            object-fit: contain;
             display: block;
-            margin: 0 auto;
+            width: 100%;
+            max-width: none;
+            height: auto;
+            margin: 0;
+            padding: 0;
         }
-        
-        /* Mobile */
-        @media (max-width: 600px) {
-            .banner img {
-                height: 160px;
-            }
-        }
-        
+
+        /* ================================
+           Header
+           ================================ */
+
         header {
             background: #0f172a;
             color: white;
@@ -69,6 +70,10 @@
             margin: 0 auto;
         }
 
+        /* ================================
+           Main Content
+           ================================ */
+
         .container {
             max-width: 1000px;
             margin: 0 auto;
@@ -81,6 +86,10 @@
             margin-bottom: 35px;
             color: #0f172a;
         }
+
+        /* ================================
+           App Cards
+           ================================ */
 
         .apps {
             display: grid;
@@ -106,6 +115,10 @@
             margin-bottom: 20px;
         }
 
+        /* ================================
+           Buttons
+           ================================ */
+
         .button {
             display: inline-block;
             padding: 10px 18px;
@@ -120,6 +133,10 @@
             opacity: 0.85;
         }
 
+        /* ================================
+           About
+           ================================ */
+
         .about {
             margin-top: 60px;
             text-align: center;
@@ -130,6 +147,10 @@
             margin: 0 auto;
             color: #64748b;
         }
+
+        /* ================================
+           Footer
+           ================================ */
 
         footer {
             background: #0f172a;
@@ -149,11 +170,11 @@
             color: white;
         }
 
+        /* ================================
+           Mobile
+           ================================ */
+
         @media (max-width: 600px) {
-            .banner img {
-                width: 100%;
-                height: auto;
-            }
 
             header {
                 padding: 40px 20px 55px;
@@ -170,6 +191,14 @@
             .container {
                 padding: 40px 20px;
             }
+
+            .section-title {
+                font-size: 26px;
+            }
+
+            .card {
+                padding: 24px;
+            }
         }
     </style>
 
@@ -177,86 +206,128 @@
 
 <body>
 
-<!-- GKInnovation Banner -->
-<div class="banner">
-    <img
-        src="images/gkinnovations-banner.png"
-        alt="GKInnovation - Mobile Applications">
-</div>
+    <!-- ================================
+         GKInnovation Banner
+         ================================ -->
 
-<header>
-   <!-- <h1>GKInnovation</h1> -->
-    <p>
-        Creating simple, useful and engaging mobile applications
-        designed to make everyday experiences better.
-    </p>
-</header>
+    <div class="banner">
+        <img
+            src="images/gkinnovations-banner.png"
+            alt="GKInnovation - Mobile Applications">
+    </div>
 
-<main class="container">
 
-    <section>
-        <h2 class="section-title">Our Apps</h2>
+    <!-- ================================
+         Header
+         ================================ -->
 
-        <div class="apps">
+    <header>
+        <p>
+            Creating simple, useful and engaging mobile applications
+            designed to make everyday experiences better.
+        </p>
+    </header>
 
-            <article class="card">
-                <h3>🎮 Tic Tac Toe - XO Offline</h3>
 
-                <p>
-                    Enjoy the classic Tic Tac Toe game with offline
-                    gameplay, multiple difficulty levels and a simple
-                    and enjoyable experience.
-                </p>
+    <!-- ================================
+         Main Content
+         ================================ -->
 
-                <a
-                    class="button"
-                    href="https://play.google.com/store/apps/details?id=com.gktech.apps.tictactoe"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    View on Google Play
-                </a>
-            </article>
+    <main class="container">
 
-            <article class="card">
-                <h3>📅 Daily Habit Tracker</h3>
+        <section>
 
-                <p>
-                    Build better habits and stay consistent with Daily Habit
-                    Tracker. Create habits, set reminders and track your daily
-                    progress with a simple and easy-to-use experience.
-                </p>
+            <h2 class="section-title">Our Apps</h2>
 
-                <a
-                    class="button"
-                    href="https://play.google.com/store/apps/details?id=com.gktech.apps.dailyhabit"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    View on Google Play
-                </a>
-            </article>
+            <div class="apps">
 
-        </div>
-    </section>
+                <!-- Tic Tac Toe -->
 
-    <section class="about">
-        <h2 class="section-title">About GKInnovation</h2>
+                <article class="card">
+
+                    <h3>🎮 Tic Tac Toe - XO Offline</h3>
+
+                    <p>
+                        Enjoy the classic Tic Tac Toe game with offline
+                        gameplay, multiple difficulty levels and a simple
+                        and enjoyable experience.
+                    </p>
+
+                    <a
+                        class="button"
+                        href="https://play.google.com/store/apps/details?id=com.gktech.apps.tictactoe"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        View on Google Play
+                    </a>
+
+                </article>
+
+
+                <!-- Daily Habit Tracker -->
+
+                <article class="card">
+
+                    <h3>📅 Daily Habit Tracker</h3>
+
+                    <p>
+                        Build better habits and stay consistent with
+                        Daily Habit Tracker. Create habits, set reminders
+                        and track your daily progress with a simple and
+                        easy-to-use experience.
+                    </p>
+
+                    <a
+                        class="button"
+                        href="https://play.google.com/store/apps/details?id=com.gktech.apps.dailyhabit"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        View on Google Play
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+
+        <section class="about">
+
+            <h2 class="section-title">About GKInnovation</h2>
+
+            <p>
+                GKInnovation focuses on building lightweight and
+                user-friendly mobile applications with a focus on
+                simplicity, reliability and a great user experience.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================
+         Footer
+         ================================ -->
+
+    <footer>
 
         <p>
-            GKInnovation focuses on building lightweight and
-            user-friendly mobile applications with a focus on
-            simplicity, reliability and a great user experience.
+            © 2026 GKInnovation. All rights reserved.
         </p>
-    </section>
 
-</main>
+        <p style="margin-top: 10px;">
 
-<footer>
-    <p>© 2026 GKInnovation. All rights reserved.</p>
+            <a href="privacy-policy.html">
+                Privacy Policy
+            </a>
 
-    <p style="margin-top: 10px;">
-        <a href="privacy-policy.html">Privacy Policy</a>
-    </p>
-</footer>
+        </p>
+
+    </footer>
 
 </body>
 </html>
